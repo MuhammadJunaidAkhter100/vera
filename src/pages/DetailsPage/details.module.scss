@@ -1,0 +1,67 @@
+.mainWrapper {
+  .details {
+    padding: 32px 112px;
+    @media (max-width: 1366px) {
+      padding: 16px 82px;
+    }
+    .header {
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2px;
+        h3 {
+          margin: 0;
+          font-size: 24px;
+          line-height: 38px;
+          color: #101828;
+          display: flex;
+          gap: 12px;
+          line-height: 32px;
+          .back {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+          }
+        }
+        .buttons {
+          display: flex;
+          gap: 12px;
+        }
+      }
+      .job {
+        font-size: 16px;
+        color: #667085;
+        b {
+          color: #000000;
+        }
+      }
+    }
+    .infoWrapper {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 38px;
+      .info {
+        flex: 1;
+        max-width: 187px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #667085;
+        font-weight: normal;
+        label {
+          font-weight: 500;
+          display: block;
+          color: #000;
+        }
+      }
+    }
+  }
+  .chat {
+    box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+      0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+    height: calc(100svh - 73px);
+  }
+}

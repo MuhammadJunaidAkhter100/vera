@@ -1,0 +1,35 @@
+.headerWrapper{
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #EAECF0;
+    .headerContainer{
+        width: 100%;
+        margin-inline: auto;
+        padding: 16px 112px;
+        // max-width: 1280px;
+        @media(max-width: 1366px){
+            padding: 16px 82px;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: auto;
+            height: 24px;
+        }
+        .headerRight{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .icon{
+                width: 20px;
+                height: 20px;
+            }
+            :global(.MuiIconButton-root){
+                &:last-of-type{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
